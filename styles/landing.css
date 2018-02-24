@@ -1,0 +1,98 @@
+body.landing {
+     background-color: rgb(255,255,255);
+
+ }
+
+/* 62PX | CONDENSED HEADING | THIN */
+ h1 {
+   font-family: 'adrianna-condensed', sans-serif;
+   font-style: normal;
+   font-weight: 100;
+   font-size: 62px;
+
+ }
+
+/* 48PX | REGULAR HEADING | REGULAR */
+ h2 {
+   font-family: 'adrianna', sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 36px;
+
+ }
+
+/* 24PX | CONDENSED HEADING | SEMI-BOLD */
+ h3 {
+   font-family: 'adrianna-condensed', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+
+ }
+
+ /* 24PX | REGULAR HEADING | BOLD */
+  h4 {
+    font-family: 'adrianna', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+  }
+
+/* 16PX | REGULAR PARAGRAPH | THIN */
+ p {
+   font-family: 'adrianna', sans-serif;
+   font-style: normal;
+   font-weight: 100;
+   font-size: 16px;
+
+ }
+
+ .hero-content {
+     position: relative; /* positioning will be explained in a resource */
+     min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+     background-image: url(assets/images/hero-image.png);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+ }
+
+ .hero-content .hero-title {
+
+     position: absolute;
+     top: 40%;
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     transform: translateY(-50%);
+     width: 90%;
+     text-align: right;
+     text-transform: uppercase;
+     color: rgb(255,255,255);
+ }
+
+ .services-container .point-title {
+     position: relative;
+ }
+
+.point-title {
+  text-transform: uppercase;
+}
+
+.blurb-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blurb-description {
+  text-align: center;
+}
+
+ .point {
+     position: relative;
+     padding: 2rem;
+     text-align: center;
+ }
+
+ .point .point-title {
+     font-size: 1.25rem;
+ }

@@ -1,0 +1,126 @@
+*, *::before, *::after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+html{
+  height: 100%; /* makes sure the HTML takes up 100% of the browser window */
+  font-size: 100%;
+}
+
+body {
+  font-family: 'adrianna-condensed', sans-serif;
+  color: #414549;
+  min-height: 100%
+}
+
+  body.landing {
+    background-color: rgba(255, 255, 255);  /* sets background-color to white*/
+  }
+
+    .navbar {
+      position: relative;
+      padding: .5rem;
+
+      /* #1 */
+      background-color: rgba(255, 255, 255, 0.9);
+
+      /* #2 */
+      z-index: 1;
+    }
+
+    .navbar .logo {
+      position: relative;
+      height: auto;
+      width: auto;
+      max-height: 72px;
+      max-width: 250px;
+      left: 5%;
+      cursor: pointer;
+ }
+
+ .navbar .links-container {
+     display: table;
+     position: absolute;
+     top: 15%;
+     right: 5%;
+     height: 100px;
+     color: #414549;
+ }
+
+ .links-container .navbar-link {
+     display: table-cell;
+     position: relative;
+     font-family: 'adrianna-condensed', sans-serif;
+     font-weight: 300;
+     color: #414549;
+     height: 100%;
+     padding-left: 1rem;
+     padding-right: 1rem;
+
+     /* #3 */
+     vertical-align: middle;
+     color: #414549;
+     letter-spacing: 0.05rem;
+     text-transform: uppercase;
+
+     /* #4 */
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+   /* #5
+ .links-container .navbar-link:hover {
+     color: rgb(233,50,117);
+ }
+
+
+ .links-container .navbar-link:active {
+     color: rgb(233,50,117);
+     background-color: white;
+ }*/
+
+    .container {
+      margin: 0 auto;
+      max-width: 64rem;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 64rem;
+    }
+
+    .container.narrow {
+     max-width: 56rem;
+ }
+
+
+/* Medium & small screens (640px) */
+@media (min-width: 640px) {
+  html { font-size: 112%; }
+
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+/* Large screens (1024px) */
+@media (min-width: 1024px) {
+  html { font-size: 120%; }
+
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }
+  }
+
+  .clearfix::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }

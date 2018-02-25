@@ -18,35 +18,34 @@ body {
     background-color: rgba(255, 255, 255);  /* sets background-color to white*/
   }
 
-    .navbar {
-      position: relative;
-      padding: .5rem;
+  .navbar {
+    position: relative;
+    padding: 1rem;
+    /* #1 */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* #2 */
+    z-index: 1;
+  }
 
-      /* #1 */
-      background-color: rgba(255, 255, 255, 0.9);
-
-      /* #2 */
-      z-index: 1;
-    }
-
-    .navbar .logo {
-      position: relative;
-      height: auto;
-      width: auto;
-      max-height: 72px;
-      max-width: 250px;
-      left: 5%;
-      cursor: pointer;
- }
+  .navbar .logo {
+    position: relative;
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    left: 5%;
+    cursor: pointer;
+   }
 
  .navbar .links-container {
      display: table;
      position: absolute;
      top: 15%;
+     bottom: 15%;
      right: 5%;
      height: 100px;
      color: #414549;
- }
+   }
 
  .links-container .navbar-link {
      display: table-cell;
@@ -67,14 +66,16 @@ body {
      /* #4 */
      text-decoration: none;
      cursor: pointer;
+   }
+
+   /* #5 */
+ .navbar-link:hover {
+     border-bottom: 6px;
+     border-bottom-style: solid;
+     border-color: #8E68AD;
  }
 
-   /* #5
- .links-container .navbar-link:hover {
-     color: rgb(233,50,117);
- }
-
-
+/*
  .links-container .navbar-link:active {
      color: rgb(233,50,117);
      background-color: white;

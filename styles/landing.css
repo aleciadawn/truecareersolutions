@@ -1,98 +1,190 @@
-body.landing {
-     background-color: rgb(255,255,255);
-
+/* MAIN BACKGROUND IS WHITE */
+  body.landing {
+    background-color: rgb(255,255,255);
  }
-
 /* 62PX | CONDENSED HEADING | THIN */
- h1 {
-   font-family: 'adrianna-condensed', sans-serif;
-   font-style: normal;
-   font-weight: 100;
-   font-size: 62px;
-
- }
-
+  h1 {
+    font-family: 'adrianna-condensed', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 62px;
+  }
 /* 48PX | REGULAR HEADING | REGULAR */
- h2 {
+  h2 {
    font-family: 'adrianna', sans-serif;
    font-style: normal;
    font-weight: 300;
    font-size: 36px;
-
  }
-
 /* 24PX | CONDENSED HEADING | SEMI-BOLD */
- h3 {
+  h3 {
    font-family: 'adrianna-condensed', sans-serif;
    font-style: normal;
    font-weight: 400;
    font-size: 24px;
-
  }
-
- /* 24PX | REGULAR HEADING | BOLD */
+/* 24PX | REGULAR HEADING | BOLD */
   h4 {
     font-family: 'adrianna', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-
   }
-
+/* 62PX | CONDENSED HEADING | SEMI-BOLD */
+  h5 {
+     font-family: 'adrianna-condensed', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 62px;
+   }
 /* 16PX | REGULAR PARAGRAPH | THIN */
- p {
-   font-family: 'adrianna', sans-serif;
-   font-style: normal;
-   font-weight: 100;
-   font-size: 16px;
+  p {
+     font-family: 'adrianna', sans-serif;
+     font-style: normal;
+     font-weight: 100;
+     font-size: 16px;
 
- }
+   }
 
- .hero-content {
-     position: relative; /* positioning will be explained in a resource */
-     min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+.hero-content {
+     position: relative;
+     min-height: 600px;
      background-image: url(assets/images/hero-image.png);
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
- }
+   }
+
+.layer {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
  .hero-content .hero-title {
-
      position: absolute;
-     top: 40%;
+     padding-top: 25%;
      -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
      transform: translateY(-50%);
-     width: 90%;
+     width: 95%;
      text-align: right;
      text-transform: uppercase;
      color: rgb(255,255,255);
  }
 
- .services-container .point-title {
-     position: relative;
- }
+/* HERO BUTTON */
+    .button {
+         display: inline-block;
+         border-radius: 4px;
+         background-color: #EA4960;
+         border: none;
+         font-family: "adrianna-light", sans-serif;
+         font-weight:100;
+         color: #FFFFFF;
+         text-align: center;
+         font-size: 14px;
+         padding: 15px;
+         width: 200px;
+         transition: all 0.5s;
+         cursor: pointer;
+         margin: 5px;
+        }
+    .button span {
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+        }
+    .button span:after {
+         content: '\00bb';
+         position: absolute;
+         opacity: 0;
+         top: 0;
+         right: -20px;
+         transition: 0.5s;
+        }
+    .button:hover span {
+         padding-right: 25px;
+        }
+    .button:hover span:after {
+         opacity: 1;
+         right: 0;
+        }
+/* END OF HERO BUTTON */
 
-.point-title {
-  text-transform: uppercase;
-}
-
+/* STYLING FOR CSS BLURB SECTION */
 .blurb-title {
-  text-transform: uppercase;
-  text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 90px;
 }
-
 .blurb-description {
-  text-align: center;
+    text-align: center;
+    padding: 0px 300px 90px;
+  }
+/* END OF STYLING FOR CSS BLURB SECTION */
+
+.services-container{
+  border-top: 8px;
+  border-top-style: solid;
+  border-top-color: rgba(65,59,73);
+}
+/* CAPITALIZATION OF "INDIVIDUAL COACHING" & "CORPORATE SERVICES" IN SERVICES SECTION */
+.point-title {
+    text-transform: uppercase;
+    font-family: "adrianna-condensed", sans-serif;
+  }
+/* OVERALL STYLING FOR CONTENT WITHIN EACH BLOCK IN THE SERVICE SECTION */
+.point-title-text {
+    background-color: rgba(255,255,255, 0.90);
+    position: absolute;
+    width: 600px;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
- .point {
-     position: relative;
-     padding: 2rem;
-     text-align: center;
- }
+/* HERO BUTTON */
+    .learn-more-button {
+         display: inline-block;
+         border-radius: 4px;
+         background-color: #73CBCA;
+         border: none;
+         font-family: "adrianna-light", sans-serif;
+         font-weight:100;
+         color: #FFFFFF;
+         text-align: center;
+         font-size: 14px;
+         padding: 15px;
+         width: 200px;
+         transition: all 0.5s;
+         cursor: pointer;
+         margin: 5px;
+        }
 
- .point .point-title {
-     font-size: 1.25rem;
- }
+    .learn-more-button:hover {
+      box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .learn-more-button span {
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+        }
+
+    .learn-more-button:hover span:after {
+         opacity: 1;
+         right: 0;
+        }
+
+   .point {
+       position: relative;
+       padding: 0rem;
+       text-align: center;
+   }
